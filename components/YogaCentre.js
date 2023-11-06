@@ -2,7 +2,9 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Container from './Container';
-
+import Header from './Header';
+import Component_Header from './Component_Header';
+import SearchBar from './SearchBar';
 const YogaCentre  = () => {
 
    return (
@@ -10,11 +12,23 @@ const YogaCentre  = () => {
       <LinearGradient
         colors={['#5C70E4', '#EF5DA8']}
         style={styles.gradient}>
+            <Component_Header title={"Yoga Centre"} icon={require("../assets/back.png")} />
+            <SearchBar/>
           <View style={{flexDirection:'column'}}>
-          <View style={{flexDirection:'row'}}>
+          <View style={{flexDirection:'row',marginTop:50,marginLeft:5,marginRight:5}}>
+        
 
            <Container/> 
+           <Container/>
+
+          </View>
+
+          <View style={{flexDirection:'row',marginTop:50,marginLeft:5,marginRight:5}}>
+        
+
            <Container/> 
+           <Container/>
+
           </View>
           
           </View>
@@ -31,8 +45,7 @@ const styles = StyleSheet.create({
   },
   gradient: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
 });
 
