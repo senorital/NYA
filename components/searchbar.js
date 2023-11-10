@@ -1,7 +1,6 @@
 import React , {useState} from 'react';
 import { View,TextInput  } from 'react-native';
 import { styles } from './style';
-import Icon from 'react-native-vector-icons/Feather';
 const SearchBar  = () => {
 const [text, setText] = useState('');
 
@@ -9,7 +8,7 @@ const handleSearch = () => {
       onSearch(text);
     };
    return (
-    <View style={styles.container}>
+    <View>
       <TextInput
         style={styles.input}
         placeholder="Search..."

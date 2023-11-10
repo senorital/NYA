@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
 import { windowHeight,windowWidth } from '../utils/Dimensions';
 const styles = StyleSheet.create({
+       container: {
+        flex: 1,
+       backgroundColor:'#fff'
+      },
+      gradient: {
+    flex: 1,
+      },
     text : {
         fontFamily:'Poppins',
         fontSize : 14,
@@ -11,6 +18,8 @@ const styles = StyleSheet.create({
       },
       smalltext :{
       color:'#5F5F5F',
+      textAlign:'center',
+      alignItems:'center',
       fontFamily :'Poppins',
       fontSize:12
       },
@@ -91,8 +100,34 @@ const styles = StyleSheet.create({
       sharetext: {
         textAlign:'center',
         fontSize: 10,
+        fontFamily : 'Poppins',
         letterSpacing: 0.25,
         color: 'white',
+      },
+      Text :{
+        fontFamily : 'Poppins-SemiBold',
+        fontSize:15,
+        marginTop:30
+      },
+      containers: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 16,
+        borderBottomWidth: 1,
+        borderColor: '#ccc',
+      },
+      image: {
+        width: 100,
+        height: 100,
+        marginRight: 16,
+        marginLeft:-16
+      },
+      textContainer: {
+        flex: 1,
+      },
+      title: {
+        fontSize: 14,
+        fontFamily:'Poppins-SemiBold'
       },
   
   });

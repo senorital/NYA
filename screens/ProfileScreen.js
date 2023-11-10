@@ -8,7 +8,8 @@ import {
   ScrollView,
 } from "react-native";
 import { Avatar } from "react-native-elements";
-import Header from "../components/Header";
+import Component_Header from "../components/Component_Header";
+import { LinearGradient } from 'expo-linear-gradient';
 
 // import { removeToken } from "..a/services/AsyncStorageService";
 // import { useGetDetailsQuery } from "../services/signUpApi";
@@ -44,10 +45,11 @@ const ProfileScreen = ({ navigation }) => {
   // });
   return (
     <View style={styles.container}>
-      <View style={{backgroundColor: 'blue' }}>
-      <Header title={"My Profile"} icon={require("../assets/back.png")} />
-      <View style={{ margin: 20, flexDirection: "row" , backgroundColor: 'red' }}>
-
+      <LinearGradient
+        colors={['#5C70E4', '#EF5DA8']}
+        style={styles.gradient}>
+            <Component_Header title={"Profile"} icon={require("../assets/back.png")} />
+      <View style={{flexDirection:'row', alignSelf : 'center',padding:20,marginBottom:10}}>
         <Avatar
           rounded
           source={{
@@ -55,8 +57,8 @@ const ProfileScreen = ({ navigation }) => {
           }}
           size={75}
         />
-        <View style={{ marginLeft: 20, marginTop: 15 }}>
-          <Text style={{ fontFamily: "Poppins", fontSize: 16 }}>
+        <View style={{ marginLeft: 20}}>
+          <Text style={{ fontFamily: "Poppins", fontSize: 16 , color:'white'}}>
             {/* Andrea Hirata */}
             {/* {userData.name} */}Prakhar
           </Text>
@@ -64,7 +66,7 @@ const ProfileScreen = ({ navigation }) => {
             style={{
               fontSize: 16,
               fontFamily: "Poppins",
-              color: "gray",
+              color: "white",
               marginTop: 3,
             }}
           >
@@ -76,8 +78,8 @@ const ProfileScreen = ({ navigation }) => {
             style={{
               fontSize: 16,
               fontFamily: "Poppins",
-              color: "gray",
               marginTop: 3,
+              color:'white'
             }}
           >
             {/* hirata@gmail.com */}
@@ -85,10 +87,10 @@ const ProfileScreen = ({ navigation }) => {
 
           </Text>
         </View>
-      </View>
-      </View>
+        </View>
+      </LinearGradient>
       <ScrollView>
-      <TouchableOpacity onPress={() => navigation.navigate('ThemeScreen')}>
+      <TouchableOpacity onPress={() => navigation.navigate('YogaNews')}>
         <View
           style={styles.view} >
           <Image
@@ -103,7 +105,7 @@ const ProfileScreen = ({ navigation }) => {
         </View>
       </TouchableOpacity>
       <View style={styles.hr} />
-      <TouchableOpacity onPress={() => navigation.navigate("ThemeScreen")}>
+      <TouchableOpacity onPress={() => navigation.navigate("YogaTrainer")}>
         <View
           style={styles.view} >
        <Image

@@ -22,22 +22,22 @@ export default Component_Header;
 
 const styles=StyleSheet.create({
     Component_Header:{
-        height:70,
+        height:50,
         width:'100%',
         flexDirection:'row',
         elevation:0.1,
         alignItems:'center',
         paddingLeft:20,
-        
-        marginTop:20,
+        marginBottom:20,
+        marginTop:30,
      
     },back:{
-        width:20,
-        height:20,
-        marginTop:2,
+        width:30,
+        height:30,
+        
     },
     title:{
-        fontSize:18,
+        fontSize:20,
         fontWeight:'600',
         color:'white',
        fontFamily :'Poppins'

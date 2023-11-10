@@ -10,6 +10,8 @@ import QuizScreen from "./screens/QuizScreen";
 import VideoScreen from "./screens/VideoScreen";
 import ThemeScreen from "./screens/ThemeScreen";
 import YogaCentre from "./components/YogaCentre";
+import YogaTrainer from "./components/YogaTrainer";
+import YogaNews from "./components/YogaNews";
 const Stack = createNativeStackNavigator();
 // const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
 // export default function App (){
@@ -70,6 +72,23 @@ function App() {
         <Stack.Screen
           name="YogaCentre"
           component={YogaCentre} 
+          options={{ headerShown: false }}
+
+
+        />
+
+        <Stack.Screen
+          name="YogaTrainer"
+          component={YogaTrainer} 
+          options={{ headerShown: false }}
+
+
+        />
+
+
+        <Stack.Screen
+          name="YogaNews"
+          component={YogaNews} 
           options={{ headerShown: false }}
 
 

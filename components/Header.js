@@ -29,13 +29,12 @@ const styles=StyleSheet.create({
         elevation:0.1,
         alignItems:'center',
         paddingLeft:20,
-        
-        // marginTop:10,
         paddingTop:15,
+        marginTop:30,
+        marginBottom:20
     },back:{
-        width:20,
-        height:20,
-        marginTop:2,
+        width:30,
+        height:30,
     },
     title:{
         fontSize:18,
