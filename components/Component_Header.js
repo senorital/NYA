@@ -32,12 +32,12 @@ const styles=StyleSheet.create({
         marginTop:30,
      
     },back:{
-        width:30,
-        height:30,
+        width:25,
+        height:25,
         
     },
     title:{
-        fontSize:20,
+        fontSize:18,
         fontWeight:'600',
         color:'white',
        fontFamily :'Poppins'

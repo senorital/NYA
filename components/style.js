@@ -105,13 +105,12 @@ const styles = StyleSheet.create({
         color: 'white',
       },
       Text :{
-        fontFamily : 'Poppins-SemiBold',
+        fontFamily : 'Poppins-Medium',
         fontSize:15,
         marginTop:30
       },
       containers: {
         flexDirection: 'row',
-        alignItems: 'center',
         padding: 16,
         borderBottomWidth: 1,
         borderColor: '#ccc',
@@ -123,7 +122,7 @@ const styles = StyleSheet.create({
         marginLeft:-16
       },
       textContainer: {
-        flex: 1,
+        flex: 2,
       },
       title: {
         fontSize: 14,
